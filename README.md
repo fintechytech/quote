@@ -4,7 +4,7 @@
 
 ## Описание
 
-Нужно разработать простую таблицу котировок для криптовалютной биржи [Bitcoin.com](https://exchange.bitcoin.com/) используя eё публичный [API](https://api.exchange.bitcoin.com/).
+Нужно разработать простую таблицу котировок для криптовалютной биржи [fmfw.io](https://fmfw.io/) используя eё публичный [API](https://api.fmfw.io/).
 В таблице должны отображаться и обновляться в реальном времени следующие данные для каждой пары валют: 
 * Название или ID - Ticker
 * цена покупки - Bid
@@ -59,10 +59,10 @@
 
 ### API
 
-Рекомендуется использовать публичный WebSocket API биржи [Bitcoin.com](https://api.exchange.bitcoin.com/), этот API работает по [JSON-RPC 2](https://www.jsonrpc.org/specification).
+Рекомендуется использовать публичный WebSocket API биржи [fmfw.io](https://api.fmfw.io/), этот API работает по [JSON-RPC 2](https://www.jsonrpc.org/specification).
 
-Для разработки вам потребуется метод [GetSymbols](https://api.exchange.bitcoin.com/#get-symbols) с помощью которого можно получить список пар торгующихся на бирже.
-Также вас интересуeт метод [subscribeTicker](https://api.exchange.bitcoin.com/#subscribe-to-ticker) и соответствующие сообщения-нотификации в которых уже будут
+Для разработки вам потребуется метод [GetSymbols](https://api.fmfw.io/#get-symbols) с помощью которого можно получить список пар торгующихся на бирже.
+Также вас интересуeт метод [subscribeTicker](https://api.fmfw.io/#subscribe-to-ticker) и соответствующие сообщения-нотификации в которых уже будут
 присылаться и обновляться все необходимые данные. Подробнее о протоколе и форматах сообщений написано в документации по ссылкам выше.
 
 Примерный алгоритм взаимодействия с API таков:
